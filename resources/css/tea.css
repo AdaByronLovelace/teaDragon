@@ -1,0 +1,245 @@
+/**** CSS Reset ****/
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{border:0;font-size:100%;font:inherit;vertical-align:baseline;margin:0;padding:0}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:none}table{border-collapse:collapse;border-spacing:0}a:link,a:visited,a:hover,a:active{text-decoration:none}
+
+/**** Page Wide ****/
+body {
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    height: 100%;
+}
+b {
+    font-weight: bold;   
+}
+aside {
+    font-style: italic;
+    font-size: 125%;
+    color: gray;
+    padding: 10px 0 10px 30px;
+}
+.all-content {
+    min-height:100%;
+	position:relative;
+}
+li {
+    display: list-item;
+}
+.clear {
+    clear:both;
+}
+h1 {
+    font-size: 300%;
+    color: whitesmoke;
+}
+h2 {
+    padding: 20px;
+    font-size: 200%;
+    font-weight:bold;
+}
+a:hover {
+    opacity: .6;   
+}
+p {
+    padding: 20px 30px;   
+}
+/**** Top Nav ****/   
+header {
+    box-shadow: 7px 7px 20px #888888;
+}
+.nav-top {
+    height: 25px;
+    background: white;
+}
+.nav-main {
+    position: relative;
+}
+.nav {
+    position: relative;
+    height: 50px;
+    border: 1px solid transparent;
+    float: left;
+    font-size: 125%;
+    background: #BEBECB;
+    width: 100%;
+}
+.nav-item.active {
+    background-color: #7E7E97;
+}
+.nav li {
+    float: left;
+    position: relative;
+    display: inline-block;
+    padding: 0 20px;
+    line-height: 50px;
+}
+.nav li.nav-item:hover {
+    background-color: #7E7E97;
+}
+.nav li a {
+    color: white;
+    text-weight: bold; 
+}
+.nav li span { 
+    display: inline-block;
+    float: left;
+}
+#dragon {
+    height: 100px;
+    width: 75px;
+    margin-top: -20px;
+    background: url(tandd.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    list-style: none;
+    font-size: 14px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    background-clip: padding-box;
+}
+
+/**** Bottom Nav ****/
+footer {
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    background: #BEBECB;
+    text-align: center;
+    bottom: 0px;
+    left: 0px;
+}
+footer p {
+    font-size: 80%;
+    line-height: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+/**** Page Elements ****/
+main {
+    width: 100%;
+    float: left;
+    padding-bottom: 25px;
+}
+main section {
+    margin: 0 auto;
+}
+.content {
+    display: none;    
+}
+.sub-menu {
+    position: fixed;
+    top: 3%;
+    padding: 20px;
+    right: 3%;
+    z-index: 1000;
+    width: 150px;
+    background: gray;
+    box-shadow: 7px 7px 20px #888888;
+}
+.sub {
+    display: none;   
+    color: white;
+}
+.sub-menu ul li {
+    list-style: none;
+    padding: 5px;
+}
+.sub-menu ul li a {
+    color: white;
+    text-weight: bold;
+}
+.subsection {
+    width: 100%;
+    background: whitesmoke;
+    float: left;
+}
+main section#home .subsection h1 {
+    padding: 100px;
+}
+.subsection#eberron {
+    
+}
+.subsection h2, .subsection p {
+    padding: 20px 25% 20px 20px;
+}
+.content p span {
+    font-weight: bold;
+    padding: 0 20px;
+    font-size: 125%;
+}
+main section .subsection#eberron-image {
+    min-height: 500px;
+    background-image: url(sharn.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .6;
+}
+main section .subsection#world-image {
+    min-height: 900px;
+    background-image: url(world.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .6;
+}
+main section .subsection#sharn-image {
+    min-height: 1900px;
+    background-image: url(sharn-explained.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: .6;
+}
+/**** RESPONSIVE: Large Screens ****
+@media only screen and (min-device-width : 1214px) {
+    main section .subsection#eberron-image {
+        min-height: 500px;
+        background-image: url(sharn.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        opacity: .6;
+    }
+}
+
+/**** RESPONSIVE: Large Screens ****
+@media only screen and (min-device-width : 1024px) and (max-device-width : 1214px) {
+    main section .subsection#eberron-image {
+        min-height: 500px;
+        background-image: url(sharn.jpg);
+        background-repeat: no-repeat;
+        background-size: contain;
+        opacity: .6;
+    }
+}
+
+/**** RESPONSIVE: Medium Screens ****
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    main section .subsection#eberron-image {
+        min-height: 841px;
+        background-image: url(sharn.jpg);
+        background-repeat: no-repeat;
+        opacity: .6;
+    }
+}
+
+/**** RESPONSIVE: Smartphones ****
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    main section .subsection#eberron-image {
+        min-height: 841px;
+        background-image: url(sharn.jpg);
+        background-repeat: no-repeat;
+        opacity: .6;
+    }
+}*/
