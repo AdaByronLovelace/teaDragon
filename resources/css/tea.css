@@ -35,6 +35,12 @@ h2 {
     font-size: 200%;
     font-weight:bold;
 }
+h3 {
+    padding: 20px;
+    font-size: 150%;
+    font-weight:bold;
+    font-variant: small-caps;
+}
 a:hover {
     opacity: .6;   
 }
@@ -86,7 +92,7 @@ header {
     height: 100px;
     width: 75px;
     margin-top: -20px;
-    background: url(tandd.png);
+    background: url(../images/tandd.png);
     background-size: contain;
     background-repeat: no-repeat;
 }
@@ -183,21 +189,21 @@ main section#home .subsection h1 {
 }
 main section .subsection#eberron-image {
     min-height: 500px;
-    background-image: url(sharn.jpg);
+    background-image: url(../images/sharn.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     opacity: .6;
 }
 main section .subsection#world-image {
     min-height: 900px;
-    background-image: url(world.jpg);
+    background-image: url(../images/world.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     opacity: .6;
 }
 main section .subsection#sharn-image {
     min-height: 1900px;
-    background-image: url(sharn-explained.jpg);
+    background-image: url(../images/sharn-explained.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     opacity: .6;
