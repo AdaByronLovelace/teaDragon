@@ -18,7 +18,6 @@ aside {
 }
 .all-content {
     min-height:100%;
-	position:relative;
 }
 li {
     display: list-item;
@@ -201,12 +200,37 @@ main section .subsection#world-image {
     background-size: cover;
     opacity: .6;
 }
+/**** Sharn Page ****/
 main section .subsection#sharn-image {
-    min-height: 1900px;
+    min-height: 2475px;
     background-image: url(../images/sharn-explained.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     opacity: .6;
+}
+#sharn-image a {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100px;    
+}
+#sharn-image a#skyway {
+    top: 8em;
+}
+#sharn-image a#upper {
+    top: 28em;
+}
+#sharn-image a#middle {
+    top: 54em;
+}
+#sharn-image a#lower {
+    top: 86em;
+}
+#sharn-image a#cogs {
+    top: 143em;
+}
+#sharn-image a#lava {
+    top: 167em;
 }
 /**** RESPONSIVE: Large Screens ****
 @media only screen and (min-device-width : 1214px) {

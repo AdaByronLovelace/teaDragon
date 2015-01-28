@@ -26,8 +26,13 @@ $(document).ready( function() {
             $("#characters").show();
         }
     });
-
-
+    
+    $(".sub-shar a").click(function(e) {
+        e.preventDefault();
+        $("html,body").animate({
+            scrollTop: ($(this.attributes.href.value).offset().top)
+        }, 1000);
+    });
 
 });
 
