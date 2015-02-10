@@ -1,4 +1,6 @@
 $(document).ready( function() {
+    var $sub = $(".sub-menu");
+    
     $(".sub-home").show();
     $("#home").show();
 
@@ -8,22 +10,31 @@ $(document).ready( function() {
         //hide sections and sub menus
         $("main section").hide();
         $(".content").hide();
-        $(".sub").hide();
+        $(".sub").hide(200);
         if ($(this).attr("id") == "nav-home") {
-            $(".sub-home").show();
+            $sub.animate({left: 116}, 200);
+            $(".sub-home").show(200);
             $("#home").show();
         } else if ($(this).attr("id") == "nav-cal") {
-            $(".sub-cals").show();
+            $sub.animate({left: 306}, 200);
+            $(".sub-cals").show(200);
             $("#cal").show();
         } else if ($(this).attr("id") == "nav-world") {
-            $(".sub-wrld").show();
+            $sub.animate({left: 686}, 200);
+            $(".sub-wrld").show(200);
             $("#world-map").show();
         } else if ($(this).attr("id") == "nav-sharn") {
-            $(".sub-shar").show();
+            $sub.animate({left: 876}, 200);
+            $(".sub-shar").show(200);
             $("#sharn-map").show();
         } else if ($(this).attr("id") == "nav-char") {
-            $(".sub-char").show();
+            $sub.animate({left: 496}, 200);
+            $(".sub-char").show(200);
             $("#characters").show();
+        } else if ($(this).attr("id") == "nav-gld") {
+            $sub.animate({left: 1066}, 200);
+            $(".sub-gld").show(200);
+            $("#guild").show();
         }
     });
     
