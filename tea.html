@@ -14,76 +14,56 @@
         <section class="nav-top">
         </section>
         <section class="nav-main">
-            <ul class="nav">
-                <li>
-                    <span class="nav-brand" id="dragon"></span>
-                </li>
-                <li class="nav-item active" id="nav-home">
-                    <a href="#">Home</a>
-                </li>
-                <li class="nav-item" id="nav-cal">
-                    <a href="#">Calendar</a>
-                </li>
-                <li class="nav-item" id="nav-char">
-                    <a href="#">Characters</a>
-                </li>
-                <li class="nav-item" id="nav-world">
-                  <a href="#">World Map</a>
-                </li>
-                <li class="nav-item" id="nav-sharn">
-                  <a href="#">Sharn Map</a>
-                </li>
-                <li class="nav-item" id="nav-gld">
-                  <a href="#">The Guild</a>
-                </li>
-            </ul>
+            <div class="nav-brand" id="dragon"></div>
+            <nav class="menu">
+                <ul class="active">
+                    <li class="nav-item current-item" id="nav-home">
+                        <a href="#">Home</a>
+                        <ul class="sub-menu">
+                            <li><a href="#eber">The World of Eberron</a></li>
+                            <li><a href="#">City of Sharn</a></li>
+                            <li><a href="#">Guild of Normalcy</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item" id="nav-cal">
+                        <a href="#">Calendar</a>
+                    </li>
+                    <li class="nav-item" id="nav-char">
+                        <a href="#">Characters</a>
+                        <ul class="sub-menu">
+                            <li><a href="#io">Io</a></li>
+                            <li><a href="#lak">Lakashtari</a></li>
+                            <li><a href="#dox">Dox</a></li>
+                            <li><a href="#uri">Uriah Craft</a></li>
+                            <li><a href="#ara">Aramis Black</a></li>
+                            <li><a href="#">The Hall of Fallen Heroes</a></li>
+                            <li></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item" id="nav-world">
+                        <a href="#">World Map</a>
+                        <ul class="sub-menu">
+                            <li><b>Cities of Importance</b></li>
+                            <li>Sharn</li>
+                        </ul>
+                    </li>
+                    <li class="nav-item" id="nav-sharn">
+                        <a href="#">Sharn Map</a>
+                    </li>
+                    <li class="nav-item" id="nav-gld">
+                        <a href="#">The Guild</a>
+                        <ul class="sub-menu">
+                            <li>Board</li>
+                            <li>Masters of the Guild</li>
+                        </ul>
+                    </li>
+                </ul>
+                <a class="toggle-nav" href="#">&#9776;</a>
+            </nav>
         </section>
     </header>
     <span class="clear"></span>
     <main>
-        <div class="sub-menu">
-            <ul class="sub sub-home">
-                <li><a href="#eber">The World of Eberron</a></li>
-                <li><a href="#">City of Sharn</a></li>
-                <li><a href="#">Guild of Normalcy</a></li>
-            </ul>
-            <ul class="sub sub-char">
-                <li><b>The Adventurers</b></li>
-                <li><a href="#io">Io</a></li>
-                <li><a href="#lak">Lakashtari</a></li>
-                <li><a href="#dox">Dox</a></li>
-                <li><a href="#uri">Uriah Craft</a></li>
-                <li><a href="#ara">Aramis Black</a></li>
-                <li><b>Other Characters</b></li>
-                <li></li>
-            </ul>
-            <ul class="sub sub-cals">
-                <li><b>Next Sessions</b></li>
-                <li>1/11/15 Sunday</li>
-                <li>1/31/15 Saturday</li>
-                <li>2/7/15 Saturday</li>
-                <li>2/15/15 Sunday</li>
-                <li>3/7/15 Saturday</li>
-                <li>3/21/15 Saturday</li>
-            </ul>
-            <ul class="sub sub-wrld">
-                <li><b>Cities of Importance</b></li>
-                <li>Sharn</li>
-            </ul>
-            <ul class="sub sub-shar">
-                <li><b>Levels of Sharn</b></li>
-                <li><a href="#skyway">Skyway</a></li>
-                <li><a href="#upper">The Upper City</a></li>
-                <li><a href="#middle">The Middle City</a></li>
-                <li><a href="#lower">The Lower City</a></li>
-                <li><a href="#cogs">The Cogs</a></li>
-                <li><a href="#lava">Lava Pools</a></li>
-            </ul>
-            <ul class="sub sub-gld">
-                <li>Board</li>
-                <li>Masters of the Guild</li>
-            </ul>
-        </div>
         <section class="content" id="home">
             <div class="subsection" id="eberron-image">
                 <h1>Welcome to Eberron</h1>
@@ -92,29 +72,126 @@
                 <a id="eber"><h2>In Khorvaire the fires have just barely died down...</h2></a>
                 <p>The continent of Khorvaire is recovering from a long and destructive war, trying to redeem over a century of blood thristy hatred with the boom of magically enabled technology. The cities seem to grow around the former broken ghettos that the war left, bringing a the shabby and broken facades into the new vast sea of magic laden steal and prism glass.</p>
                 <p>But the scars of war have to not yet healed. Though the steam from mechanical wonders fills every street and the masses enjoy the fruits of machinist and magicians cooperation, and thread of vile animosity threads it's way through daily life, giving a darkness to even the brightest lit places in Eberron.</p>
-                <aside>The Dragonmark Houses:<br><br>
-                    <a class="tooltip" href="#">
+                <aside id="DMHouses">The Dragonmark Houses:<br><br>
+                    
+<div class="accordion">
+    <div class="accordion-section">
+        <a class="accordion-section-title" href="#HouseCannith">House Cannith - Human Mark of Making</a>
+        <div id="HouseCannith" class="accordion-section-content">
+            <img src="resources/images/Cannith.jpg"/>
+            <p>House Cannith is a human dragonmarked house whose members are well known for their innovation and advancements in technology. They are responsible for technological wonders such as the Warforged and the Lightning rail. House Cannith provide repair services and the house's gorgon mark is a known and trusted symbol that appears on magical and mundane items. Through past wars Cannith have become the most politically powerful Dragonmarked House.</p>
+        </div><!--end .accordion-section-content-->
+    </div><!--end .accordion-section-->
+    <div class="accordion-section">
+        <a class="accordion-section-title" href="#HouseDeneith">House Deneith - Human Mark of Protection</a>
+        <div id="HouseDeneith" class="accordion-section-content">
+            <img src="resources/images/Deneith.jpg"/>
+            <p>House Deneith is a human dragonmarked house whose members are highly-acclaimed mercenaries and bodyguards known for their efficiency and martial skill. Deneith are the muscle of the dragonmarked houses, providing raw power to a nation's army. Taking sides is bad for business, so during the Last War, Deneith remained neutral and provided soldiers to all sides. Now that the war has ended Deneith members are hired for guarding monarchs and chasing down criminals.</p>
+        </div><!--end .accordion-section-content-->
+    </div><!--end .accordion-section-->
+    <div class="accordion-section">
+        <a class="accordion-section-title" href="#HouseGhallanda">House Ghallanda - Halfling Mark of Hospitality</a>         
+        <div id="HouseGhallanda" class="accordion-section-content">
+            <img src="resources/images/Ghallanda.jpg"/>
+            <p>House Ghallanda is a halfling dragonmarked house found throughout Khorvaire. Ghallanda is one of the few Dragonmarked Houses that are not involved with some form of arms dealing or soldiering, instead Ghallanda are Eberron's best hosts dealing in food and shelter.</p>
+        </div><!--end .accordion-section-content-->
+    </div><!--end .accordion-section-->
+    <div class="accordion-section">
+        <a class="accordion-section-title" href="#HouseJorasco">House Jorasco - Halfling Mark of Healing</a>
+        <div id="HouseJorasco" class="accordion-section-content">
+            <img src="resources/images/Jorasco.jpg"/>
+            <p>The Mark of Healing first appeared among the halflings of the Talenta Plains about three thousand years ago, but the Jorasco family eventually moved its headquarters to Karrnath to better serve greater Khorvaire. For this reason, most of the Jorasco halflings are cosmopolitan and cultured in the traditions of the Five Nations, with few ties to the ancient nomadic ways of the Plains. Today, the Healers Guild of House Jorasco tends to the well-being of most of Khorvaire. Using both mundane and magical healing techniques, as well as alchemy and herbalism, the healers of House Jorasco deal in curing illnesses, tending wounds, and treating mental maladies in their hospitals and healing enclaves.</p>
+        </div><!--end .accordion-section-content-->
+    </div><!--end .accordion-section-->
+    <div class="accordion-section">
+        <a class="accordion-section-title" href="#HouseKundarak">House Kundarak - Dwarf Mark of Warding</a>
+        <div id="HouseKundarak" class="accordion-section-content">
+            <img src="resources/images/Kundarak.jpg"/>
+            <p>House Kundarak is a Dwarven house with services focused in security and banking. Their primary customers are those who have enough coin to buy something worth protecting including the wealthy, the powerful, other dragon marked houses and even state governments. They are the wealthiest Dragonmarked House by far and their banking establishments can be found all over Khorvaire.</p>
+        </div><!--end .accordion-section-content-->
+    </div><!--end .accordion-section-->
+    <div class="accordion-section">
+        <a class="accordion-section-title" href="#HouseLyrandar">House Lyrandar - Half-elf Mark of Storm</a>
+        <div id="HouseLyrandar" class="accordion-section-content">
+            <img src="resources/images/Lyrandar.jpg"/>
+            <p>House Lyrandar consists of half-elves with the Mark of Storm. With outposts in Breland, Aundair, Zilargo, Thrane, Valenar, and Karrnath, House Lyrandar’s shipping and transporation services rival those of House Orien, and the two often compete over contracts that could be fulfilled over either land or sea. The half-elves find few opportunities in the Lhazaar Principalities, however, and often come into conflict with ships of the Lhazaar princes in the open seas.</p>
+        </div><!--end .accordion-section-content-->
+    </div><!--end .accordion-section-->
+    <div class="accordion-section">
+        <a class="accordion-section-title" href="#HouseMedani">House Medani - Half-elf Mark of Detection</a>
+        <div id="HouseMedani" class="accordion-section-content">
+            <img src="resources/images/Medani.jpg"/>
+            <p>The half-elves of House Medani carry the Mark of Detection. House Medani originated in pre-Galifar Breland fifteen hundred years ago, using its abilities to detect threats to foresee dangers and establish a base of power related to knowledge in the wake of the War of the Mark.</p>
+        </div><!--end .accordion-section-content-->
+    </div><!--end .accordion-section-->
+    <div class="accordion-section">
+        <a class="accordion-section-title" href="#HouseOrien">House Orien - Human Mark of Passage</a>
+        <div id="HouseOrien" class="accordion-section-content">
+            <img src="resources/images/Orien.jpg"/>
+            <p>The humans of House Orien bear the Mark of Passage. The house originated in pre-Galifar Aundair almost two thousand years ago; its abilities related to transporation and teleportation quickly earned it a place among the economic powers.</p>
+        </div><!--end .accordion-section-content-->
+    </div><!--end .accordion-section-->
+    <div class="accordion-section">
+        <a class="accordion-section-title" href="#HousePhiarlan">House Phiarlan - Elf Mark of Shadow</a>
+        <div id="HousePhiarlan" class="accordion-section-content">
+            <img src="resources/images/Phiarlan.jpg"/>
+            <p>The first dragonmarks appeared among the elves of Aerenal more than three
+            thousand years ago. The Mark of Shadow and the Mark of Death appeared at about the same time, and the elves quickly understood the significance of the event. House Phiarlan organized around the Mark of Shadow and began turning the abilities provided by the mark into an economic dynasty. However, with the slaughter of the House of Death twenty-six hundred years ago, House Phiarlan left Aerenal and relocated to Khorvaire, where the elves intermingled with humans and helped lay the foundation for the Five Nations.</p>
+        </div><!--end .accordion-section-content-->
+    </div><!--end .accordion-section-->
+    <div class="accordion-section">
+        <a class="accordion-section-title" href="#HouseThuranni">House Thuranni - Elf Mark of Shadow</a>
+        <div id="HouseThuranni" class="accordion-section-content">
+            <img src="resources/images/Thuranni.jpg"/>
+            <p>Once part of House Phiarlan, the elves of House Thuranni formed their own house during the Last War as the conflict began to turn various house factions against each other. Now Thuranni competes directly with Phiarlan in the areas of espionage, surveillance, and information brokering, as well as in entertainment and artisan endeavors. The two houses share the Mark of Shadow, though the newer version of the house in many ways remains the weaker of the two.</p>
+        </div><!--end .accordion-section-content-->
+    </div><!--end .accordion-section-->
+    <div class="accordion-section">
+        <a class="accordion-section-title" href="#HouseSivis">House Sivis - Gnome Mark of Scribing</a>
+        <div id="HouseSivis" class="accordion-section-content">
+            <img src="resources/images/Sivis.jpg"/>
+            <p>Using natural talent and the Mark of Scribing, the gnomes of House Sivis have established themselves as the masters of the written and spoken word. In addition to maintaining the lines of mystical communication that connect the nations of Khorvaire, House Sivis provides translators, notaries, mediators, and advocates to cities across the continent.</p>
+        </div><!--end .accordion-section-content-->
+    </div><!--end .accordion-section-->    
+    <div class="accordion-section">
+        <a class="accordion-section-title" href="#HouseTharashk">House Tharashk - Half-Orc Mark of Finding</a>
+        <div id="HouseTharashk" class="accordion-section-content">
+            <img src="resources/images/Tharashk.jpg"/>
+            <p>The humans and half-orcs of House Tharashk use the Mark of Finding to work as prospectors, inquisitives, and bounty hunters. The Mark of Finding first appeared in the Shadow Marches about one thousand years ago. After being visited by House Sivis representatives five hundred years ago, the holders of the mark decided to follow the example of the gnomes and form an economic force of their own.</p>
+        </div><!--end .accordion-section-content-->
+    </div><!--end .accordion-section-->
+    <div class="accordion-section">
+        <a class="accordion-section-title" href="#HouseVadalis">House Vadalis - Human Mark of Handling</a>
+        <div id="HouseVadalis" class="accordion-section-content">
+            <img src="resources/images/Vadalis.jpg"/>
+            <p>House Vadalis bears the Mark of Handling, which has the power to calm and control animals. The Vadalis Handlers Guild breeds and sells a tremendous variety of animals, and Vadalis handlers serve as teamsters, trainers, and stablekeepers across Khorvaire.</p>
+        </div><!--end .accordion-section-content-->
+    </div><!--end .accordion-section-->    
+</div><!--end .accordion-->
+                    
+                <div class="mobileHiddenHouses">
+                    <a class="tooltip">
                         House Cannith - Human Mark of Making
                         <span>
                             <img src="resources/images/Cannith.jpg"/>
-                            <p>House Cannith is a human dragonmarked house whose members are well known for their innovation and advancements in technology. They are responsible for technological wonders such as the Warforged and the Lightning rail. House Cannith provide repair services and the house's gorgon mark is a known and trusted symbol that appears on magical and mundane items. Through past wars Cannith have become the most politically powerful Dragonmarked House.</p>
+                            House Cannith is a human dragonmarked house whose members are well known for their innovation and advancements in technology. They are responsible for technological wonders such as the Warforged and the Lightning rail. House Cannith provide repair services and the house's gorgon mark is a known and trusted symbol that appears on magical and mundane items. Through past wars Cannith have become the most politically powerful Dragonmarked House.
                         </span>
                     </a><br/>
-                    <a href="#" class="tooltip">
+                    <a class="tooltip">
                         House Deneith - Human Mark of Protection
                         <span>
                             <img src="resources/images/Deneith.jpg"/>
                             House Deneith is a human dragonmarked house whose members are highly-acclaimed mercenaries and bodyguards known for their efficiency and martial skill. Deneith are the muscle of the dragonmarked houses, providing raw power to a nation's army. Taking sides is bad for business, so during the Last War, Deneith remained neutral and provided soldiers to all sides. Now that the war has ended Deneith members are hired for guarding monarchs and chasing down criminals. 
                         </span>
                     </a><br/>
-                    <a href="#" class="tooltip">
+                    <a class="tooltip">
                         House Ghallanda - Halfling Mark of Hospitality
                         <span>
                             <img src="resources/images/Ghallanda.jpg"/>
                             House Ghallanda is a halfling dragonmarked house found throughout Khorvaire. Ghallanda is one of the few Dragonmarked Houses that are not involved with some form of arms dealing or soldiering, instead Ghallanda are Eberron's best hosts dealing in food and shelter.
                         </span>
                     </a><br/>
-                    <a href="#" class="tooltip">
+                    <a class="tooltip">
                         House Jorasco - Halfling Mark of Healing
                         <span>
                             <img src="resources/images/Jorasco.jpg"/>
@@ -123,14 +200,14 @@ to better serve greater Khorvaire. For this reason, most of the Jorasco halfling
 Today, the Healers Guild of House Jorasco tends to the well-being of most of Khorvaire. Using both mundane and magical healing techniques, as well as alchemy and herbalism, the healers of House Jorasco deal in curing illnesses, tending wounds, and treating mental maladies in their hospitals and healing enclaves.
                         </span>
                     </a><br/>
-                    <a href="#" class="tooltip">
+                    <a class="tooltip">
                         House Kundarak - Dwarf Mark of Warding
                         <span>
                             <img src="resources/images/Kundarak.jpg"/>
                             House Kundarak is a Dwarven house with services focused in security and banking. Their primary customers are those who have enough coin to buy something worth protecting including the wealthy, the powerful, other dragon marked houses and even state governments. They are the wealthiest Dragonmarked House by far and their banking establishments can be found all over Khorvaire. 
                         </span>
                     </a><br/>
-                    <a href="#" class="tooltip">
+                    <a class="tooltip">
                         House Lyrandar - Half-elf Mark of Storm
                         <span>
                             <img src="resources/images/Lyrandar.jpg"/>
@@ -138,21 +215,21 @@ Today, the Healers Guild of House Jorasco tends to the well-being of most of Kho
 Storm. With outposts in Breland, Aundair, Zilargo, Thrane, Valenar, and Karrnath, House Lyrandar’s shipping and transporation services rival those of House Orien, and the two often compete over contracts that could be fulfilled over either land or sea. The half-elves find few opportunities in the Lhazaar Principalities, however, and often come into conflict with ships of the Lhazaar princes in the open seas.
                         </span>
                     </a><br/>
-                    <a href="#" class="tooltip">
+                    <a class="tooltip">
                         House Medani - Half-elf Mark of Detection
                         <span>
                             <img src="resources/images/Medani.jpg"/>
                             The half-elves of House Medani carry the Mark of Detection. House Medani originated in pre-Galifar Breland fifteen hundred years ago, using its abilities to detect threats to foresee dangers and establish a base of power related to knowledge in the wake of the War of the Mark. 
                         </span>
                     </a><br/>
-                    <a href="#" class="tooltip">
+                    <a class="tooltip">
                         House Orien - Human Mark of Passage
                         <span>
                             <img src="resources/images/Orien.jpg"/>
                             The humans of House Orien bear the Mark of Passage. The house originated in pre-Galifar Aundair almost two thousand years ago; its abilities related to transporation and teleportation quickly earned it a place among the economic powers.
                         </span>
                     </a><br/>
-                    <a href="#" class="tooltip">
+                    <a class="tooltip">
                         House Phiarlan - Elf Mark of Shadow
                         <span>
                             <img src="resources/images/Phiarlan.jpg"/>
@@ -161,7 +238,7 @@ thousand years ago. The Mark of Shadow and the Mark of Death appeared at about t
 to Khorvaire, where the elves intermingled with humans and helped lay the foundation for the Five Nations.
                         </span>
                     </a><br/>
-                    <a href="#" class="tooltip">
+                    <a class="tooltip">
                         House Thuranni - Elf Mark of Shadow
                         <span>
                             <img src="resources/images/Thuranni.jpg"/>
@@ -169,27 +246,28 @@ to Khorvaire, where the elves intermingled with humans and helped lay the founda
 though the newer version of the house in many ways remains the weaker of the two.
                         </span>
                     </a><br/>
-                    <a href="#" class="tooltip">
+                    <a class="tooltip">
                         House Sivis - Gnome Mark of Scribing
                         <span>
                             <img src="resources/images/Sivis.jpg"/>
                             Using natural talent and the Mark of Scribing, the gnomes of House Sivis have established themselves as the masters of the written and spoken word. In addition to maintaining the lines of mystical communication that connect the nations of Khorvaire, House Sivis provides translators, notaries, mediators, and advocates to cities across the continent.
                         </span>
                     </a><br/>
-                    <a href="#" class="tooltip">
+                    <a class="tooltip">
                         House Tharashk - Half-Orc Mark of Finding
                         <span>
                             <img src="resources/images/Tharashk.jpg"/>
                             The humans and half-orcs of House Tharashk use the Mark of Finding to work as prospectors, inquisitives, and bounty hunters. The Mark of Finding first appeared in the Shadow Marches about one thousand years ago. After being visited by House Sivis representatives five hundred years ago, the holders of the mark decided to follow the example of the gnomes and form an economic force of their own.
                         </span>
                     </a><br/>
-                    <a href="#" class="tooltip">
+                    <a class="tooltip">
                         House Vadalis - Human Mark of Handling
                         <span>
                             <img src="resources/images/Vadalis.jpg"/>
                             House Vadalis bears the Mark of Handling, which has the power to calm and control animals. The Vadalis Handlers Guild breeds and sells a tremendous variety of animals, and Vadalis handlers serve as teamsters, trainers, and stablekeepers across Khorvaire.
                         </span>
                     </a><br/>
+                </div>
                 </aside>
                 <p>The warring king's houses have become capitalistically competing guilds, using the marketplace as their battlefield. The main industry guilds have become swamped with other, more unusual guilds. For when the armies were disbanded, the need for quiet killers arose. So some negotiation for reasources go on in the day, in public meeting places, but the true power plays are those that come and go without being seen, and with as little blood splatter evidence as possible.</p>
                 <h2>And no place are the guilds powers more evident than in towering and mountainous Sharn, the greatest city of the realm. Where in it's grimey alleys, trouble finds the adventurer, not the other way around.</h2>
@@ -213,9 +291,11 @@ though the newer version of the house in many ways remains the weaker of the two
         <section class="content" id="cal">
             <div class="subsection" id="assignments">
                 <h2>Sessions and Assignments</h2>
-                <p><span>1/11/15</span>Buy an adventure journal for your charcter. Write one adventure that your character has had before now. You have been apart of the Normalacy Guild for awhile now. You start out at level 5 because you've had five levels of assignments where you battled orcs and skeletons and even the most vile creatures: a few rats.</p>
-                <p><span>1/24/15</span>Audra moved to Bellingham!</p>
-                <p><span>1/31/15</span>Send Emily an email of your character's image and a short bio for the website.</p>
+                <div class="clear center">
+                    <p><span>1/11/15</span>Buy an adventure journal for your charcter. Write one adventure that your character has had before now. You have been apart of the Normalacy Guild for awhile now. You start out at level 5 because you've had five levels of assignments where you battled orcs and skeletons and even the most vile creatures: a few rats.</p>
+                    <p><span>1/24/15</span>Audra moved to Bellingham!</p>
+                    <p><span>1/31/15</span>Send Emily an email of your character's image and a short bio for the website.</p>
+                </div>
             </div>
             <div class="subsection" id="calendar">
                 <iframe src="https://www.google.com/calendar/embed?height=600&amp;wkst=1&amp;bgcolor=%23FFFFFF&amp;src=5lbisiuc2pi5b68de9cds32j4s%40group.calendar.google.com&amp;color=%2342104A&amp;ctz=America%2FLos_Angeles" style=" border-width:0 " width="800" height="600" frameborder="0" scrolling="no"></iframe>
@@ -226,14 +306,7 @@ though the newer version of the house in many ways remains the weaker of the two
             </div>
         </section>
         <section class="content" id="sharn-map">
-            <div class="subsection" id="sharn-image">
-                <a id="skyway"></a>
-                <a id="upper"></a>
-                <a id="middle"></a>
-                <a id="lower"></a>
-                <a id="cogs"></a>
-                <a id="lava"></a>
-            </div>
+            <div class="subsection" id="sharn-image"></div>
         </section>
         <section class="content" id="characters">
             <div class="subsection" id="char-desc">
@@ -271,7 +344,7 @@ though the newer version of the house in many ways remains the weaker of the two
         </section>
     </main>
     <!--<footer>
-        <p>Made by &copy; Emily Dawn Smith</p>
+        <p>Powered by Dragon's fire</p>
     </footer>-->
     </div>
 </body>
