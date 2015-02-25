@@ -228,7 +228,7 @@ main section .subsection#world-image {
     min-height: 1175px;
     background-image: url(../images/world.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     opacity: .6;
 }
 /**** Sharn Page ****/
@@ -236,7 +236,7 @@ main section .subsection#sharn-image {
     min-height: 2475px;
     background-image: url(../images/sharn-explained.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: contain;
     opacity: .6;
 }
 #sharn-image a {
