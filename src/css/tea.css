@@ -1,0 +1,594 @@
+/**** Page Wide ****/
+body {
+    font-family: @font-family-base;
+    font-size: @font-size-base;
+    line-hieght: @line-height-base;
+    cursor: default;
+}
+a {
+    color: @link-color;
+}
+a:hover {
+    opacity: .6;   
+}
+b {
+    font-weight: bold;   
+}
+aside {
+    font-style: italic;
+    font-size: 125%;
+    color: gray;
+    padding: 10px 0 10px 30px;
+}
+li {
+    display: list-item;
+}
+.clear {
+    clear:both;
+}
+#eberron-image h1 {
+    font-size: 300%;
+    color: whitesmoke;
+    margin-top: 50px;
+}
+h2 {
+    padding: 20px;
+    font-size: 200%;
+    font-weight:bold;
+}
+h3 {
+    padding: 20px;
+    font-size: 150%;
+    font-weight:bold;
+    font-variant: small-caps;
+}
+
+p {
+    padding: 20px 30px;   
+}
+/**** Top Nav ****/   
+
+ul.navbar-nav {
+    margin-left: 90px;
+}
+/*
+header {
+    box-shadow: 7px 7px 20px #888888;
+}
+.nav-top {
+    height: 25px;
+    background: white;
+}
+.nav-main {
+    position: relative;
+}
+.nav {
+    position: relative;
+    height: 50px;
+    border: 1px solid transparent;
+    float: left;
+    font-size: 125%;
+    background: #BEBECB;
+    width: 100%;
+}
+.nav-item {
+    width: 150px;
+}
+.nav-item.active {
+    background-color: #7E7E97;
+}
+.nav li {
+    float: left;
+    position: relative;
+    display: inline-block;
+    padding: 0 20px;
+    line-height: 50px;
+    text-align: center;
+}
+.nav li.nav-item:hover {
+    background-color: #7E7E97;
+}
+.nav li a {
+    color: white;
+    text-weight: bold; 
+    font-size: 90%; 
+}
+.nav li span { 
+    display: inline-block;
+    float: left;
+}
+*/
+#dragon {
+    height: 100px;
+    width: 75px;
+    right: initial;
+    margin-top: 0px;
+    margin-left: 3px;
+    background: url(../images/tandd.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: fixed;
+    transition: all linear 0.5s;
+}
+#dragon.tea {
+    height: 100px;
+    width: 45px;
+    right: initial;
+    margin-left: 15px;
+    background: url(../images/tea.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    position: fixed;
+    transition: all linear 0.5s;
+}
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 1000;
+    display: none;
+    float: left;
+    min-width: 160px;
+    padding: 5px 0;
+    margin: 2px 0 0;
+    list-style: none;
+    font-size: 14px;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    border: 1px solid rgba(0,0,0,.15);
+    border-radius: 4px;
+    -webkit-box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    box-shadow: 0 6px 12px rgba(0,0,0,.175);
+    background-clip: padding-box;
+}
+
+/**** Bottom Nav ****/
+footer {
+    width: 100%;
+    height: 20px;
+    position: absolute;
+    background: #BEBECB;
+    text-align: center;
+    bottom: 0px;
+    left: 0px;
+}
+footer p {
+    font-size: 80%;
+    line-height: 20px;
+    color: white;
+    font-weight: bold;
+}
+
+/**** Page Elements ****/
+main {
+    width: 100%;
+    float: left;
+}
+main section {
+    margin: 0 auto;
+    padding-top: 50px;
+}
+.content {
+    display: none;    
+}
+
+/**** sub-menu ****/
+/*
+.sub-menu {
+    position: absolute;
+    top: 76px;
+    padding: 20px;
+    z-index: 1000;
+    width: 150px;
+    left: 116px;
+    background: gray;
+    box-shadow: 3px 3px 10px #888888;
+}
+.sub {
+    display: none;   
+    color: white;
+}
+.sub-menu ul li {
+    list-style: none;
+    padding: 5px;
+}
+.sub-menu ul li a {
+    color: white;
+    text-weight: bold;
+}
+*/
+
+.subsection {
+    width: 100%;
+    background: whitesmoke;
+    float: left;
+}
+main section#home .subsection h1 {
+    padding: 150px 100px;
+}
+.subsection#eberron {
+}
+.subsection h2, .subsection p {
+    padding: 20px 20% 20px 20px;
+}
+#char-desc h2, #assignments h2 {
+}
+.content p span {
+    font-weight: bold;
+    padding: 0 20px;
+    font-size: 125%;
+}
+main section #eberron-image {
+    min-height: 1200px;
+    background-image: url(../images/sharn.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+main section #world-image {
+    min-height: 1175px;
+    background-image: url(../images/world.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: .6;
+}
+/**** Sharn Page ****/
+main section #sharn-image {
+    min-height: 2475px;
+    background-image: url(../images/sharn-explained.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: .6;
+}
+#sharn-image a {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100px;    
+}
+#sharn-image a#skyway {
+    top: 8em;
+}
+#sharn-image a#upper {
+    top: 28em;
+}
+#sharn-image a#middle {
+    top: 54em;
+}
+#sharn-image a#lower {
+    top: 86em;
+}
+#sharn-image a#cogs {
+    top: 143em;
+}
+#sharn-image a#lava {
+    top: 167em;
+}
+
+/**** Cards ****/
+#DMHouses > div {
+    margin: 10px 0px;
+}
+div.card {
+    border: 5px solid #000;
+    border-radius: 5px;
+}
+a.cardface {
+    color: #000;
+    display: block;
+    cursor: pointer;
+}
+a.cardface:hover {
+    text-decoration:none;
+    opacity: 1;
+}
+a.cardface img {
+    width: 100%;
+    max-height: 290px;
+}
+a.cardface span {
+    text-align: center;
+}
+.cardtext {
+    text-align: justify;
+    margin: 0px;
+    overflow-y: scroll;
+    height: 343px;
+}
+a.cardface span h3 {
+    margin: 0px;
+    padding: 0px;
+}
+a.cardface span p {
+    padding: 0px;
+} 
+
+/*** Card Flipping ***/
+
+.flip {
+    -webkit-perspective: 800;
+    perspective: 800;
+    position: relative;
+}
+.flip .card.flipped {
+    -webkit-transform: rotatey(-180deg);
+    transform: rotatey(-180deg);
+}
+.flip .card {
+    max-height: 353px;
+    -webkit-transform-style: preserve-3d;
+    -webkit-transition: 0.6s;
+    transform-style: preserve-3d;
+    transition: 0.6s;
+}
+.flip .card .face {
+    -webkit-backface-visibility: hidden ;
+    backface-visibility: hidden ;
+    z-index: 2;
+}
+.flip .card .cardface {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+.flip .card .cardtext {
+    transform: rotatey(-180deg);
+}
+.inner{margin:0px !important;}
+
+/**** Tooltip ****/
+/*
+.mobileHiddenHouses {
+    display: block;
+}
+a.tooltip {
+	outline:none;
+	text-decoration: none;
+	color: black;
+	font-weight: bold;
+    display: inline-block;
+}	
+a.tooltip strong {line-height:30px;}
+a.tooltip:hover {
+    text-decoration:none;
+    opacity: 1;
+    color: blue;
+}
+a.tooltip span {
+    z-index:10;
+    display: none;
+    visibility: hidden;
+	padding:5px 7px;
+    margin-top:-75px;
+	margin-left:400px;
+    width:300px;
+	line-height:16px;
+    text-align: justify;
+    font-size: 13px;
+    font-style: normal;
+    transition: visibility linear 0.5s;
+}
+a.tooltip span img {
+	width: 100%;
+}
+a.tooltip span img.callout {
+	width: initial;
+}
+a.tooltip:hover span {
+    display: inline;
+    visibility: visible;
+    position: absolute;
+    border:2px solid #FFF;
+	color:#00FFFF;
+    background:#000;
+}
+.callout {
+	z-index:20;
+	position:absolute;
+	border:0;
+	top: 56px;
+	left: -22px;
+	transform: rotate(270deg);
+}
+*/
+
+/*CSS3 extras*/
+a.tooltip span {
+    border-radius:2px;        
+    box-shadow: 0px 0px 8px 4px #666;
+    /*opacity: 0.8;*/
+}
+/******* End Tooltip *******/
+
+/*** Character Bios ***/
+#current-characters.row, #lost-characters.row {
+    margin: 0px;
+}
+#current-characters > div, #lost-characters > div {
+    float: left;
+    width: 300px;
+    margin: 10px 10px 10px 20px;
+}
+#current-characters h3 {
+}
+#current-characters h3 .title {
+    color: gray;
+    font-size: 70%;
+    display: block;
+}
+#lost-characters img {
+    opacity: 0.6;
+}
+
+/*----- Accordion -----*/
+.accordion, .accordion * {
+    -webkit-box-sizing:border-box; 
+    -moz-box-sizing:border-box; 
+    box-sizing:border-box;
+}
+ 
+.accordion {
+    overflow:hidden;
+    box-shadow:0px 1px 3px rgba(0,0,0,0.25);
+    border-radius:3px;
+    background:#f7f7f7;
+    display: none;
+}
+ 
+/*----- Section Titles -----*/
+.accordion-section-title {
+    width:100%;
+    padding:15px;
+    display:inline-block;
+    border-bottom:1px solid #1a1a1a;
+    background:#333;
+    transition:all linear 0.15s;
+    /* Type */
+    font-size:1.200em;
+    text-shadow:0px 1px 0px #1a1a1a;
+    color:#fff;
+}
+ 
+.accordion-section-title.active, .accordion-section-title:hover {
+    background:#4c4c4c;
+    /* Type */
+    text-decoration:none;
+}
+ 
+.accordion-section:last-child .accordion-section-title {
+    border-bottom:none;
+}
+ 
+/*----- Section Content -----*/
+.accordion-section-content {
+    padding:15px;
+    display:none;
+}
+
+/*----- Top Nav -----*/
+.clearfix:after {
+    display:block;
+    clear:both;
+}
+
+header {
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+}
+/*----- Menu Outline -----*/
+.menu-wrap {
+    width:100%;
+    box-shadow:0px 1px 3px rgba(0,0,0,0.2);
+    background:#3e3436;
+}
+ 
+.menu {
+    width:1000px;
+    margin:0px auto;
+}
+ 
+.menu li {
+    margin:0px;
+    list-style:none;
+    font-family:'Ek Mukta';
+}
+ 
+.menu a {
+    transition:all linear 0.15s;
+    color:#919191;
+}
+ 
+.menu li:hover > a, .menu .current-item > a {
+    text-decoration:none;
+    color:#be5b70;
+}
+ 
+.menu .arrow {
+    font-size:11px;
+    line-height:0%;
+}
+ 
+/*----- Top Level -----*/
+.menu > ul > li {
+    float:left;
+    display:inline-block;
+    position:relative;
+    font-size:19px;
+}
+ 
+.menu > ul > li > a {
+    padding:10px 40px;
+    display:inline-block;
+    text-shadow:0px 1px 0px rgba(0,0,0,0.4);
+}
+ 
+.menu li:hover > a, .menu > ul > .current-item > a {
+    background:#2e2728;
+}
+ 
+/*----- Bottom Level -----*/
+.menu li.nav-item:hover .sub-menu {
+    z-index:1;
+    display: block;
+}
+ 
+.sub-menu {
+    width:160%;
+    position:absolute;
+    top:100%;
+    left:0px;
+    z-index:-1;
+    display: none;
+    transition:display linear 0.15s;
+    box-shadow:0px 2px 3px rgba(0,0,0,0.2);
+    background:#2e2728;
+}
+ 
+.sub-menu li {
+    display:block;
+    font-size:16px;
+}
+ 
+.sub-menu li a {
+    padding:10px 30px;
+    display:block;
+}
+ 
+.sub-menu li a:hover, .sub-menu .current-item a {
+    background:#3e3436;
+}
+
+/*----- Toggle Button -----*/
+.toggle-nav {
+    display:none;
+}
+ 
+/*----- Menu -----*/
+@media screen and (min-width: 860px) {
+    .menu {
+        width:100%;
+        padding-left:80px;
+        box-shadow:0px 1px 1px rgba(0,0,0,0.15);
+        border-radius:3px;
+        background:#BEBECB;
+    }
+}
+ 
+.menu > ul {
+    display:inline-block;
+}
+ 
+.menu li:last-child {
+    margin-right:0px;
+}
+ 
+.menu a {
+    text-shadow:0px 1px 0px rgba(0,0,0,0.5);
+    color:#777;
+    transition:color linear 0.15s;
+}
+ 
+.menu a:hover, .menu .current-item a {
+    text-decoration:none;
+    color:#66a992;
+}
